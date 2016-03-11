@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask.ext.assets import Environment, Bundle
 
 app = Flask(__name__)
+app.config.from_object("config")
 db = SQLAlchemy(app)
 assets = Environment(app)
 assets.url = app.static_url_path
