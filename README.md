@@ -2,6 +2,7 @@
 
 ## Install
 1. `sudo gem install sass`
+
 ### with vagrant 
 Standard vagrant. Just run `vagrant up` and you should be good to go.
 
@@ -19,3 +20,5 @@ To deactivate:
 
 ## Run
 `python run.py`
+
+you may need to run `source config/settings.dev` as well. 
