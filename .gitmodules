@@ -1,0 +1,3 @@
+[submodule "data/assets/mdl"]
+	path = data/assets/mdl
+	url = https://github.com/google/material-design-lite

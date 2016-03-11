@@ -1,6 +1,7 @@
 # Data.adicu.com 
 
 ## Install
+1. `sudo gem install sass`
 ### with vagrant 
 ### with virtualenv
 1. Install python & pip

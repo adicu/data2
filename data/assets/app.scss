@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import 'mdl/src/_color-definitions.scss';
+$color-primary: $palette-deep-purple-600;
+$color-primary-dark: $palette-deep-purple-900;
+$color-accent: $palette-light-blue-300;
+$color-primary-contrast: $color-dark-contrast;
+$color-accent-contrast: $color-dark-contrast;
+@import 'mdl/src/material-design-lite';
