@@ -1,0 +1,10 @@
+name: data
+dependencies:
+- flake8        # [test]
+- flask
+- psycopg2
+- pytest        # [test]
+- python=3.5
+- sqlalchemy
+- pip:
+  - flask-sqlalchemy
