@@ -13,15 +13,19 @@ then
 fi
 
 apt-get install --yes postgresql-9.3
+sudo -u postgres psql < /vagrant/config/setup.sql
 
 if [ ! -d "/opt/conda" ]; then
     wget --no-clobber http://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
     bash Miniconda2-latest-Linux-x86_64.sh -b -p "/opt/conda"
     echo 'export PATH="/opt/conda/bin:$PATH"' >> /home/vagrant/.bashrc
-    export PATH="/opt/conda/bin:$PATH"
-
-    conda update --yes conda
 fi
 
+export PATH="/opt/conda/bin:$PATH"
+
+conda update --yes conda
 conda env update --name root --file /vagrant/config/environment.yml
+
+sudo chown -R vagrant:vagrant /opt/conda        # permissions things
+
 exit 0
