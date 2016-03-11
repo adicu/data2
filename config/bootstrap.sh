@@ -28,4 +28,6 @@ conda env update --name root --file /vagrant/config/environment.yml
 
 sudo chown -R vagrant:vagrant /opt/conda        # permissions things
 
+/opt/conda/bin/python /vagrant/create.py
+
 exit 0
